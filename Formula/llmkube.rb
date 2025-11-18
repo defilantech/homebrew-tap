@@ -9,17 +9,17 @@ class Llmkube < Formula
   license "Apache-2.0"
 
   on_macos do
-    on_intel do
+    if Hardware::CPU.intel?
       url "https://github.com/defilantech/LLMKube/releases/download/v0.2.0/LLMKube_0.2.0_darwin_amd64.tar.gz"
-      sha256 "5a51198806f42f2ad593fa15335e4fb9ffa035834b2252d2f42c0dce8e905be0"
+      sha256 "11919900df7b3fe5d3689c85eb7ad1234e55699fc1de522a04e328179565d31d"
 
       def install
         bin.install "llmkube"
       end
     end
-    on_arm do
+    if Hardware::CPU.arm?
       url "https://github.com/defilantech/LLMKube/releases/download/v0.2.0/LLMKube_0.2.0_darwin_arm64.tar.gz"
-      sha256 "302489957909f6d08b2a0c59e23ec756a14adb23f7a409ebf5283bfa82bf3ad8"
+      sha256 "ac3f80462aabb0f1d18f9623a72b2870f55db5bdd198502a37de87966d0a78fb"
 
       def install
         bin.install "llmkube"
@@ -28,24 +28,18 @@ class Llmkube < Formula
   end
 
   on_linux do
-    on_intel do
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/defilantech/LLMKube/releases/download/v0.2.0/LLMKube_0.2.0_linux_amd64.tar.gz"
-        sha256 "f04518b6ec1548023c6206578534d084738055d6dd736a5345fd49c6dc7f28f8"
-
-        def install
-          bin.install "llmkube"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/defilantech/LLMKube/releases/download/v0.2.0/LLMKube_0.2.0_linux_amd64.tar.gz"
+      sha256 "e69f955fc9e20b7f7d40d723d6b0e9285dc44389ad7cb5d161adbd74adcf0563"
+      def install
+        bin.install "llmkube"
       end
     end
-    on_arm do
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/defilantech/LLMKube/releases/download/v0.2.0/LLMKube_0.2.0_linux_arm64.tar.gz"
-        sha256 "0a78540aea0b77b661a7cabe44fa1b4b1a8f264eacf6869d080d2cb74fddf552"
-
-        def install
-          bin.install "llmkube"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/defilantech/LLMKube/releases/download/v0.2.0/LLMKube_0.2.0_linux_arm64.tar.gz"
+      sha256 "88361b339acc1f91621152743125e778b477ce8665157a8c99f19358d1351afb"
+      def install
+        bin.install "llmkube"
       end
     end
   end
