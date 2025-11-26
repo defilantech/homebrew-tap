@@ -11,7 +11,7 @@ class Llmkube < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/defilantech/LLMKube/releases/download/v0.4.0/LLMKube_0.4.0_darwin_amd64.tar.gz"
-      sha256 "27743688355c8f730d1d44d882fc0c6d34fd52d892e517ddcefd0d2f82ce9f75"
+      sha256 "d193f55f52d9b56e66217c6d11bfe43ab27ee8fe22f3e912b43cf5087f2da612"
 
       def install
         bin.install "llmkube"
@@ -19,7 +19,7 @@ class Llmkube < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/defilantech/LLMKube/releases/download/v0.4.0/LLMKube_0.4.0_darwin_arm64.tar.gz"
-      sha256 "2041e5c11e923b860b2fcf987ba14132359c57c2d956ddd2ca7039ea86c16d9d"
+      sha256 "966a8c2ced03e5ff08d13c1af1cfc87b2a6674921d67420ef1859892583a0021"
 
       def install
         bin.install "llmkube"
@@ -30,14 +30,14 @@ class Llmkube < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/defilantech/LLMKube/releases/download/v0.4.0/LLMKube_0.4.0_linux_amd64.tar.gz"
-      sha256 "4287ed90e0cade4455b6c626d7df161dd70584d9f2f6eda9b313fb21a1e2cbbb"
+      sha256 "af18a4c8441a9fc4b76b44afe3e6a45990bd9de5a47207916c0b4d307f5b3014"
       def install
         bin.install "llmkube"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/defilantech/LLMKube/releases/download/v0.4.0/LLMKube_0.4.0_linux_arm64.tar.gz"
-      sha256 "ce1a00dd80808ae200d4764cdff340f481cb6d3fd779fc15e2634d919cc13c89"
+      sha256 "8d88ef6d94e28e94a6250d0e9dcfd9cb8fe8300c2dff04b1475207300bd96c84"
       def install
         bin.install "llmkube"
       end
