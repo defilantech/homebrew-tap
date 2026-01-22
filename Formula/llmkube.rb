@@ -5,21 +5,21 @@
 class Llmkube < Formula
   desc "GPU-accelerated Kubernetes operator for local LLM inference"
   homepage "https://github.com/defilantech/LLMKube"
-  version "0.4.11"
+  version "0.4.12"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/defilantech/LLMKube/releases/download/v0.4.11/LLMKube_0.4.11_darwin_amd64.tar.gz"
-      sha256 "f5d684ec1245d8217e44591c3a9e790415ad706bce4862cb18495bfdf17368e2"
+      url "https://github.com/defilantech/LLMKube/releases/download/v0.4.12/LLMKube_0.4.12_darwin_amd64.tar.gz"
+      sha256 "46326779f70bd155df881534061f723609d54ebac22676aa934c2dd980e53ce5"
 
       def install
         bin.install "llmkube"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/defilantech/LLMKube/releases/download/v0.4.11/LLMKube_0.4.11_darwin_arm64.tar.gz"
-      sha256 "0c0145d13e9ededba103055c0ba4453c117bf29e000aa5b5ba3d9bb124ec9ee1"
+      url "https://github.com/defilantech/LLMKube/releases/download/v0.4.12/LLMKube_0.4.12_darwin_arm64.tar.gz"
+      sha256 "b87f0a73004b7602e2c0fc6f63b99ad16550ef76454eee8a0e47cb5fac8abf7d"
 
       def install
         bin.install "llmkube"
@@ -29,15 +29,15 @@ class Llmkube < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/defilantech/LLMKube/releases/download/v0.4.11/LLMKube_0.4.11_linux_amd64.tar.gz"
-      sha256 "6a9695ba3fb76fa9913e8f32a4ea3a99f688ba921f6ade8e5939b9e92992a60d"
+      url "https://github.com/defilantech/LLMKube/releases/download/v0.4.12/LLMKube_0.4.12_linux_amd64.tar.gz"
+      sha256 "921c2550d894624248279f3c923a5622d12823647a5a813851339c7f532f840f"
       def install
         bin.install "llmkube"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/defilantech/LLMKube/releases/download/v0.4.11/LLMKube_0.4.11_linux_arm64.tar.gz"
-      sha256 "bef909f65ca41e2cb1511300b36ca02a1dd5765fe0cadcc7342e8e840f723e94"
+      url "https://github.com/defilantech/LLMKube/releases/download/v0.4.12/LLMKube_0.4.12_linux_arm64.tar.gz"
+      sha256 "3c806b3ae09444582dec4f95f8955c44c4b977957467efe56351f91923771a07"
       def install
         bin.install "llmkube"
       end
