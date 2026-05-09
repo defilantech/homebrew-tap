@@ -5,21 +5,21 @@
 class Infercost < Formula
   desc "Kubernetes-native cost intelligence for on-premises AI inference"
   homepage "https://infercost.ai"
-  version "0.3.0"
+  version "0.4.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/defilantech/infercost/releases/download/v0.3.0/infercost_0.3.0_darwin_amd64.tar.gz"
-      sha256 "530cff225a7489a0e0dedb9f27457c06182c8917f1350ae7c6de53e4327730d8"
+      url "https://github.com/defilantech/infercost/releases/download/v0.4.0/infercost_0.4.0_darwin_amd64.tar.gz"
+      sha256 "5e2895e8bad3ddce0c401010f75cf74df3e46984b0017a16c40c99191343fc47"
 
       define_method(:install) do
         bin.install "infercost"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/defilantech/infercost/releases/download/v0.3.0/infercost_0.3.0_darwin_arm64.tar.gz"
-      sha256 "b0c7fd0e823b88c3e03f3426409a83e83bbb3624565a7c8846c2f1fbb1b6a1e7"
+      url "https://github.com/defilantech/infercost/releases/download/v0.4.0/infercost_0.4.0_darwin_arm64.tar.gz"
+      sha256 "7e1f2d476af28b9d3667ae4bb3c82958ba4fdff868cc368577254f26294a3b5b"
 
       define_method(:install) do
         bin.install "infercost"
@@ -29,15 +29,15 @@ class Infercost < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/defilantech/infercost/releases/download/v0.3.0/infercost_0.3.0_linux_amd64.tar.gz"
-      sha256 "a22b8b824c0ec699b1fa07e713aec3a380ae027bc2172fc12ea3e446dc8cc942"
+      url "https://github.com/defilantech/infercost/releases/download/v0.4.0/infercost_0.4.0_linux_amd64.tar.gz"
+      sha256 "83fbae6372ceae0728c31ed3da935e3a57903e9bb6ef70c9a30ed61a4ae3d0ef"
       define_method(:install) do
         bin.install "infercost"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/defilantech/infercost/releases/download/v0.3.0/infercost_0.3.0_linux_arm64.tar.gz"
-      sha256 "289bfbd3d0243301b7c32308426bd2aebd64a4136d5f0f0f77384695aac2c86b"
+      url "https://github.com/defilantech/infercost/releases/download/v0.4.0/infercost_0.4.0_linux_arm64.tar.gz"
+      sha256 "08a87e5f6ae4c9df039ad0e70ba4026c8f093a4ef469471f1c23c38e3d10d44f"
       define_method(:install) do
         bin.install "infercost"
       end
