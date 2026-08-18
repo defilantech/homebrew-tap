@@ -1,28 +1,28 @@
 class Llmkube < Formula
   desc "GPU-accelerated Kubernetes operator for local LLM inference"
   homepage "https://github.com/defilantech/LLMKube"
-  version "0.9.17"
+  version "0.9.18"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/defilantech/LLMKube/releases/download/v0.9.17/LLMKube_0.9.17_darwin_arm64.tar.gz"
-      sha256 "8346a0199267fa2ac2fced8d987c18905f4592630b80a5b9bada46dcf9aaad5b"
+      url "https://github.com/defilantech/LLMKube/releases/download/v0.9.18/LLMKube_0.9.18_darwin_arm64.tar.gz"
+      sha256 "ab97cdff103dab47c80698b6db79b9ffdee9117a830e0662609b8ab606a55df4"
     end
     on_intel do
-      url "https://github.com/defilantech/LLMKube/releases/download/v0.9.17/LLMKube_0.9.17_darwin_amd64.tar.gz"
-      sha256 "9e66299cd930af886e7029debef241a1be4dd7034d5c2d4871fc264a9946bb11"
+      url "https://github.com/defilantech/LLMKube/releases/download/v0.9.18/LLMKube_0.9.18_darwin_amd64.tar.gz"
+      sha256 "50a984a478922a1962315cd4f7a537ed13381dbbf7b44afa5da4754e83ba0628"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/defilantech/LLMKube/releases/download/v0.9.17/LLMKube_0.9.17_linux_arm64.tar.gz"
-      sha256 "555c9e60ff9e44ab88eceb8062c8d8f20b5cdc16ee38a3ac9d268fc16b664f92"
+      url "https://github.com/defilantech/LLMKube/releases/download/v0.9.18/LLMKube_0.9.18_linux_arm64.tar.gz"
+      sha256 "77d4e69fb8e118ffa99eab152ec9feb6546678cac81b6e2126f1844b1170bb2f"
     end
     on_intel do
-      url "https://github.com/defilantech/LLMKube/releases/download/v0.9.17/LLMKube_0.9.17_linux_amd64.tar.gz"
-      sha256 "512256dbd2406b75e5145f09a295d6ccccac1999a322273a5d6a4950a693aed7"
+      url "https://github.com/defilantech/LLMKube/releases/download/v0.9.18/LLMKube_0.9.18_linux_amd64.tar.gz"
+      sha256 "98c3e43acee4cb7781483ce36e43a9592b5215e769505c707536a5d00ff9b6ec"
     end
   end
 
