@@ -1,28 +1,28 @@
 class Socair < Formula
   desc "Signed assurance attestations for open-weight AI models"
   homepage "https://socair.ai"
-  version "0.1.0-rc.6"
+  version "0.1.0-rc.7"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/defilantech/socair/releases/download/v0.1.0-rc.6/socair_0.1.0-rc.6_darwin_arm64"
-      sha256 "1486a667ef5f3da4c8c1fca2632a7df6015a6af78892c983c2b446dc208fdb35"
+      url "https://github.com/defilantech/socair/releases/download/v0.1.0-rc.7/socair_0.1.0-rc.7_darwin_arm64"
+      sha256 "0a7f9039473d9bdae7e62e2d596ca795849c0e7bda46fc6ebebd25ec5ac193fa"
     end
     on_intel do
-      url "https://github.com/defilantech/socair/releases/download/v0.1.0-rc.6/socair_0.1.0-rc.6_darwin_amd64"
-      sha256 "aadfbe3c5dc84f93bba151822d84a921a450c150c19b2a94cfcc389299fabe8c"
+      url "https://github.com/defilantech/socair/releases/download/v0.1.0-rc.7/socair_0.1.0-rc.7_darwin_amd64"
+      sha256 "8b82c4cb8f1f7f7583344cdebf0d0d6ddab65c8798eedaa4b0bd82bd4ccff25d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/defilantech/socair/releases/download/v0.1.0-rc.6/socair_0.1.0-rc.6_linux_arm64"
-      sha256 "9ba6e5541548316994274f0712148b3be53c7f52df9bd03bc2276ad75b22c1f9"
+      url "https://github.com/defilantech/socair/releases/download/v0.1.0-rc.7/socair_0.1.0-rc.7_linux_arm64"
+      sha256 "92524aabf64dc33b3de2c20d90204467a93f9ae758664496858292d7e946986d"
     end
     on_intel do
-      url "https://github.com/defilantech/socair/releases/download/v0.1.0-rc.6/socair_0.1.0-rc.6_linux_amd64"
-      sha256 "dfae66cc0b5c76fb13bcf59fe62d5c2b39438d14c09ac21d4bc7c9cd72c0491f"
+      url "https://github.com/defilantech/socair/releases/download/v0.1.0-rc.7/socair_0.1.0-rc.7_linux_amd64"
+      sha256 "49bf89246a03e2a57c362501f624d16d35af4797c7aec56ce90422358103e497"
     end
   end
 
