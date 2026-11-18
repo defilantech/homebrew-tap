@@ -16,15 +16,15 @@ cask "llmkube-metal-agent" do
         "~/Library/Logs/llmkube",
       ]
 
-  version "0.10.18"
+  version "0.10.19"
 
   on_macos do
     on_arm do
-      sha256 "ceeaabdc6caf92216f9a4ef9c1128d3309e809e4e951992975f3656c5753b95a"
+      sha256 "9d3d32337e51ef731fd1fd9a18a5fa9d89963c3042564a6c1519a1f894877e33"
       url "https://github.com/defilantech/LLMKube/releases/download/v#{version}/LLMKube-metal-agent_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "07fc2732d43516968388ed3611fc14b79fe9843f5795057a91b8319e9d61bad2"
+      sha256 "34acc78dc35311d8c8b5993fc5b06f0c552de10dad394ff1d33e159f00e6c5cb"
       url "https://github.com/defilantech/LLMKube/releases/download/v#{version}/LLMKube-metal-agent_#{version}_darwin_amd64.tar.gz"
     end
   end
